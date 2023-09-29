@@ -221,6 +221,38 @@ input[id="search"]:focus,
   border-radius: 2px;
   cursor: pointer;
 }
+
+/* Hamburger  */
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: #333;
+  margin: 4px 0;
+}
+
+.secondNavbar {
+  display: none;
+  /* Other styles for your secondNavbar */
+}
+
+.secondNavbar.show {
+  display: block;
+}
+
+/* ! Feel free to arrange this code anyhow you see it fit */
+/* To show in mobile screen and also pls style the secondNavbar so it can correspond with your design */
+@media (max-width: 768px) {
+  .hamburger-menu {
+    display: block; /* Show the hamburger menu icon */
+  }
+}
+/* Old code */
 .secondNavbar ul {
   margin-top: 60px;
   background-color: #1b1d1deb;
@@ -427,6 +459,8 @@ footer {
 .footeritems {
   border-top: 1px solid #384759;
 }
+
+/* Added overflow:hidden; to fix the white-spacing */
 .lastfooter {
   height: 44vh;
   background-color: #131a22;
