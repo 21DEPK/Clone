@@ -327,12 +327,16 @@ figcaption{
 .card3 button:hover{
     background: orange;
 }
-
-
-
-
-
-
+.row3card3 figure{
+    width: 40%;
+    margin-left: 5%;
+}
+.row3card3 .img{
+    margin-left: 10%;
+}
+.row3card3 figure img{
+    width: 84%;
+}
 
 /* footer */
 
